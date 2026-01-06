@@ -1,2 +1,2 @@
 # Bala Pavani Lakshmi Priya Koppuravuri
-My portfolio, That helps me communicate with recruiters and get me a job that helps me learn more about the tech industry. 
+Welcome to my personal portfolio website, built to showcase my education, work experience, publications, projects, research, and skills in Computer Science, TinyML, and Edge AI.
