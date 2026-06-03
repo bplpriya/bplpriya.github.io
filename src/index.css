@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { scroll-behavior: smooth; }
+
+body {
+    background: #080808;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    color: #e8e6e0;
+}
+
+@layer utilities {
+    .c-space {
+        @apply sm:px-10 px-5;
+    }
+
+    .head-text {
+        font-family: 'Instrument Serif', serif;
+        font-style: italic;
+        @apply sm:text-5xl text-4xl font-normal;
+        color: rgba(255,255,255,0.9);
+    }
+
+    .section-label {
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.28);
+        margin-bottom: 2rem;
+    }
+
+    .nav-ul {
+        @apply flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20;
+    }
+
+    .nav-li {
+        color: rgba(255,255,255,0.4);
+    }
+    .nav-li:hover {
+        color: rgba(255,255,255,0.9);
+    }
+
+    .nav-li_a {
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transition: color 0.2s;
+    }
+    .nav-li_a:hover { color: rgba(255,255,255,0.85); }
+
+    .nav-sidebar {
+        @apply absolute left-0 right-0 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+        background: #0d0d0d;
+    }
+
+    .social-icon {
+        @apply w-12 h-12 rounded-full flex justify-center items-center;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .tag-pill {
+        font-size: 0.7rem;
+        background: rgba(255,255,255,0.05);
+        color: rgba(255,255,255,0.45);
+        padding: 0.2rem 0.6rem;
+        border-radius: 3px;
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+}
+
+.serif { font-family: 'Instrument Serif', serif; }
+
+.link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.38);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+}
+.link-arrow:hover {
+    color: rgba(255,255,255,0.82);
+    border-bottom-color: rgba(255,255,255,0.38);
+}
+
+.pub-hover {
+    transition: border-color 0.2s ease, background 0.2s ease;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 0.5rem;
+    padding: 1.75rem;
+    margin-bottom: 1rem;
+    background: rgba(255,255,255,0.012);
+}
+.pub-hover:hover {
+    border-color: rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.025);
+}
+
+.proj-row {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 1.75rem 0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.proj-row:hover { background: rgba(255,255,255,0.018); }
+.proj-row-last { border-bottom: 1px solid rgba(255,255,255,0.06); }
+
+.waving-hand {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+@keyframes wave-animation {
+    0%  { transform: rotate(0deg); }
+    15% { transform: rotate(14deg); }
+    30% { transform: rotate(-8deg); }
+    40% { transform: rotate(14deg); }
+    50% { transform: rotate(-4deg); }
+    60% { transform: rotate(10deg); }
+    70% { transform: rotate(0deg); }
+    100%{ transform: rotate(0deg); }
+}
