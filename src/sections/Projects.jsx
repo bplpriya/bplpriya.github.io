@@ -6,7 +6,7 @@ const Projects = () => {
 
     return (
         <section className="c-space my-24" id="projects">
-            <p className="section-label">Selected Projects</p>
+            <p className="section-label">Projects</p>
 
             <div>
                 {projects.map((proj, i) => (

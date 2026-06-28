@@ -64,6 +64,16 @@ export const publications = [
 ];
 
 export const projects = [
+    
+{
+    title: 'AgriCast - Seed Demand Forecasting & MLOps Pipeline',
+    desc: 'Agricultural seed demand is highly seasonal and difficult to forecast accurately, often leading to overstocking or stock shortages. AgriCast is an end-to-end machine learning platform that predicts weekly seed demand using XGBoost models trained on historical sales data, temporal features, and crop-season patterns. The system provides reliable forecasts while streamlining deployment through a production-ready MLOps pipeline with experiment tracking, containerization, and REST APIs.',
+    subdesc: 'Built individual forecasting models for 12 SKUs across 6 districts using three years of weekly sales data, achieving up to 0.94 R² and a 31% reduction in MAE over a seasonal baseline. Implemented MLflow experiment tracking (40+ runs), Dockerized PostgreSQL, FastAPI, MLflow, and Streamlit services, and developed an interactive dashboard for demand forecasting, regional analysis, and model performance visualization.',
+    tags: ['Python', 'XGBoost', 'FastAPI', 'MLflow', 'Docker', 'PostgreSQL', 'Streamlit', 'Scikit-learn'],
+    github: 'https://github.com/bplpriya/AgriCast.git',
+},
+
+
     {
         title: 'Brain Tumor Segmentation - GVF Snakes',
         desc: 'Traditional snake algorithms for medical image segmentation look elegant on paper but break down at concavities - they miss the shapes that matter most in tumors. The root cause: external forces derived from image gradients only exist near edges, so a contour initialized far from a boundary simply never finds it. I went back to the 1998 Xu & Prince paper and reimplemented Gradient Vector Flow from scratch, solving the pentadiagonal matrix system at each iteration. GVF diffuses edge information across the image via a PDE, giving the contour a "pull" even from far away.',

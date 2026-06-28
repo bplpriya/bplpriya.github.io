@@ -26,13 +26,13 @@ body {
     }
 
     .section-label {
-        font-size: 0.7rem;
-        font-weight: 500;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: rgba(255,255,255,0.28);
-        margin-bottom: 2rem;
-    }
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 2rem;
+}
 
     .nav-ul {
         @apply flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20;
