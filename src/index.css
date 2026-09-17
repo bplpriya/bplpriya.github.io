@@ -134,3 +134,123 @@ body {
     70% { transform: rotate(0deg); }
     100%{ transform: rotate(0deg); }
 }
+
+
+
+/* ================================
+   PRINT / PDF STYLES
+   ================================ */
+
+@media print {
+
+    /* A4 page */
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
+    /* Remove browser-added spacing */
+    html,
+    body {
+        background: #080808 !important;
+        color: #e8e6e0 !important;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Preserve dark backgrounds/colors */
+    *,
+    *::before,
+    *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    /* Disable smooth scrolling */
+    html {
+        scroll-behavior: auto !important;
+    }
+
+    /* Hide website-only navigation */
+    nav,
+    .nav-sidebar {
+        display: none !important;
+    }
+
+    /* Remove interactive behavior */
+    .proj-row {
+        cursor: default !important;
+    }
+
+    /* Keep cards/sections together when possible */
+    .pub-hover,
+    .proj-row,
+    section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* Publications */
+    .pub-hover {
+        background: rgba(255,255,255,0.012) !important;
+        border-color: rgba(255,255,255,0.10) !important;
+    }
+
+    /* Project rows */
+    .proj-row {
+        background: transparent !important;
+        border-color: rgba(255,255,255,0.10) !important;
+    }
+
+    /* Remove hover effects */
+    .pub-hover:hover,
+    .proj-row:hover,
+    .link-arrow:hover {
+        background: inherit !important;
+        border-color: inherit !important;
+        color: inherit !important;
+    }
+
+    /* Make links visible in PDF */
+    a {
+        color: rgba(255,255,255,0.8) !important;
+        text-decoration: none !important;
+    }
+
+    /* Keep headings with their content */
+    h1,
+    h2,
+    h3,
+    h4,
+    .head-text,
+    .section-label {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    /* Avoid awkward single lines at page boundaries */
+    p,
+    li {
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* Slightly tighter spacing for PDF */
+    .c-space {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* Hide elements specifically marked as screen-only */
+    .print-hidden {
+        display: none !important;
+    }
+
+    /* Show elements specifically meant for PDF */
+    .print-only {
+        display: block !important;
+    }
+}
