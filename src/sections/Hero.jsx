@@ -21,11 +21,7 @@ const Hero = () => {
 </p>
 
                 <p className="text-white/40 text-base max-w-xl leading-relaxed mb-10" style={{fontWeight: 300}}>
-                    Passionate about AI/ML, IoT, TinyML, and Edge Computing — building systems that reason
-                    under real-world hardware constraints. My work spans EEG signal processing,
-                    energy-efficient object detection and biomedical imaging.
-                    Published in <span className="text-white/60">Scientific Reports</span> and <span className="text-white/60">IEEE CINE</span>.
-                    Graduate Research Assistant at <span className="text-white/60">MORSE Lab, GSU</span>.
+                    Passionate about building intelligent, reliable software systems at the intersection of AI/ML and software engineering. My work spans machine learning, computer vision, EEG signal processing, IoT, TinyML, and Edge Computing - from developing data-driven applications to deploying models under real-world hardware constraints. 
                 </p>
 
                 <div className="flex flex-wrap gap-6">

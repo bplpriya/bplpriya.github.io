@@ -62,7 +62,7 @@ const About = () => {
                             <div>
                                 <p className="text-white/75">B.Tech Computer Science & Engineering</p>
                                 <p>SRM University AP</p>
-                                <p>2021 - 2025 · GPA 9.04/10</p>
+                                <p>2021 - 2025 · GPA 9.04/10.0</p>
                             </div>
                         </div>
                     </div>
@@ -72,11 +72,11 @@ const About = () => {
                         <div className="flex flex-col gap-4 text-sm text-white/50" style={{fontWeight: 300}}>
                             <div>
                                 <p className="text-white/75">Master's Thesis Research</p>
-                                <p>GSU · mmWave Radar Sensing &amp; FMCW Range-Doppler Analysis</p>
+                                <p>MORSE Studio, GSU · mmWave Radar Sensing &amp; FMCW Range-Doppler Analysis</p>
                             </div>
                             <div>
                                 <p className="text-white/75">Graduate Research Assistant</p>
-                                <p>MORSE Lab, GSU · EEG Attention Research &amp; Undergraduate Mentoring</p>
+                                <p>MORSE Studio, GSU · EEG Attention Research &amp; Undergraduate Mentoring</p>
                             </div>
                             <div>
                                 <p className="text-white/75">Graduate Teaching Assistant</p>
