@@ -6,6 +6,17 @@ export const navLinks = [
 ];
 
 export const publications = [
+
+    {
+    type: 'Manuscript',
+    venue: 'Manuscript Under Review, 2026',
+    title: 'Quantifying the Impact of Mobile Distractions on Adult Human Attention Performance',
+    authors: 'Sonipriya Paul, Bala Pavani Koppuravuri, Jessica Bolton, Kenneth Rice, Ashwin Ashok',
+    desc: 'A study investigating the impact of mobile distractions on adult human attention performance using behavioral and EEG-based measures across controlled distraction conditions.',
+    linkLabel: 'Manuscript ↗',
+},
+
+
     {
         type: 'Journal',
         venue: 'Scientific Reports (Nature), 2025',
@@ -15,6 +26,18 @@ export const publications = [
         link: 'https://www.nature.com/articles/s41598-025-27818-9',
         linkLabel: 'Read Journal ↗',
     },
+
+{
+    type: 'Journal',
+    venue: 'International Journal of Biomedical Imaging, 2025',
+    title: 'Leveraging CNN and Transfer Learning With EfficientNet for Enhanced Optical Coherence Tomography (OCT)',
+    authors: 'Siddartha Arekanti, Ch. Madhu Bhushan, Irfan Alam, Priya Koppuravuri, Fazal Shaik, Md Muzakkir Hussain, Firoj Gazi',
+    desc: 'A deep learning approach using CNNs and transfer learning with EfficientNet for automated classification of retinal OCT images, supporting AI-assisted ophthalmic analysis.',
+    link: 'https://onlinelibrary.wiley.com/doi/10.1155/ijbi/1272954',
+    linkLabel: 'Read Journal ↗',
+},
+
+    
     {
         type: 'Conference',
         venue: 'IEEE CINE, 2026',
@@ -64,6 +87,14 @@ export const publications = [
 ];
 
 export const projects = [
+
+    {
+    title: 'SeedSense - RAG-Powered Agricultural Assistant',
+    desc: 'Farmers and seed distributors in Andhra Pradesh navigate complex decisions every season — which variety to plant, when to sow, how much to stock, what diseases to watch for. This knowledge exists across variety guides, seasonal calendars, and distributor manuals but is scattered and inaccessible. SeedSense puts all of that into a conversational interface powered by Retrieval-Augmented Generation, letting farmers and distributors ask questions in natural language and get precise, sourced answers instantly — built around my father\'s seed distribution business for NO.5 Seeds and Bejo Seeds.',
+    subdesc: 'Built a RAG pipeline using FAISS vector store with all-MiniLM-L6-v2 sentence embeddings over 15 curated agricultural documents. Integrated Llama-3.1-8B-Instruct via HuggingFace Inference API with Groq provider for answer generation, achieving sub-3s end-to-end response time. Each answer includes source citations with relevance scores. Deployed FastAPI backend with 4 REST endpoints and an interactive Streamlit chat interface with sample questions and chat history.',
+    tags: ['Python', 'LangChain', 'FAISS', 'RAG', 'HuggingFace', 'Llama-3.1-8B', 'Groq', 'FastAPI', 'Streamlit'],
+    github: 'https://github.com/bplpriya/seedsense.git',
+},
     
 {
     title: 'AgriCast - Seed Demand Forecasting & MLOps Pipeline',
